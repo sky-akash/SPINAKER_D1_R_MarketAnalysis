@@ -1,0 +1,19 @@
+{
+  "name": "My RStudio Codespace",
+  "image": "ghcr.io/rocker-org/devcontainer/tidyverse:4",
+  
+  "features": {
+    "ghcr.io/rocker-org/devcontainer-features/rstudio-server:0": {},
+    "ghcr.io/rocker-org/devcontainer-features/r-history:0": {},
+    "ghcr.io/rocker-org/devcontainer-features/r-packages:1": {}
+  },
+  
+  "forwardPorts": [8787],
+  
+  "portsAttributes": {
+    "8787": {
+      "label": "RStudio Server",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
